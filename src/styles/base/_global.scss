@@ -1,0 +1,40 @@
+body {
+
+	p {
+	    margin: 0;
+	    padding: 0;
+	    color: inherit;
+	}
+
+	a {
+	    @include font($family: $ff-opensans);
+	    color: inherit;
+
+	    &:focus, &:hover, &:active {
+	        outline: 0;
+	        color: inherit;
+	    }
+	}
+
+	li { list-style: none; }
+
+	h1, h2, h3, h4, h5, h6 { margin: 0; }
+	
+	::selection {
+	    color: $color-white;
+	    background: $color-black;
+	    text-shadow: none;
+	}
+	::-webkit-selection {
+	    color: $color-white;
+	    background: $color-black;
+	    text-shadow: none;
+	}
+	::-moz-selection {
+	    color: $color-white;
+	    background: $color-black;
+	    text-shadow: none;
+	}
+
+	:active, :focus { outline: none; }
+}

@@ -1,0 +1,29 @@
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = false
+
+[*.{html}]
+charset = utf-8
+
+[*.html]
+indent_style = tab
+indent_size = 3
+
+[*.scss]
+indent_style = tab
+indent_size = 3
+
+[Makefile]
+indent_style = tab
+
+# Indentation override for all JS under lib directory
+[*.js]
+indent_style = tab
+indent_size = 3
+
+# Matches the exact files either package.json or .travis.yml
+[{package.json,gulpfile.js,bower.json}]
+indent_style = tab
+indent_size = 3
